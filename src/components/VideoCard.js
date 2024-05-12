@@ -5,7 +5,7 @@ const VideoCard = ({ info }) => {
     let { contentDetails, snippet, statistics } = info;
     let { thumbnails, title, channelTitle } = snippet;
     return (
-        <div className='w-72 rounded-lg'>
+        <div className='w-72 rounded-lg cursor-pointer'>
             <img src={thumbnails?.medium?.url} alt={title} className='rounded-lg' />
             <ul>
                 <li className='font-bold py-2'>{title}</li>
