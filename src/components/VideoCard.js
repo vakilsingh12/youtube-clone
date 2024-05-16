@@ -15,5 +15,13 @@ const VideoCard = ({ info }) => {
         </div>
     )
 }
+export const VideoCardHOC = ({ info }) => {
+    return (
+        <div className='border border-red-900relative p-2'>
+        <h4 className='absolute bg-black text-white px-5'>Ad</h4>
+            <VideoCard info={info} />
+        </div>
+    )
+}
 
 export default VideoCard
